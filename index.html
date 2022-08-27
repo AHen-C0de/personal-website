@@ -11,40 +11,83 @@
 
   <body>
     <header>
-      <img src="./profile_picture.jpg" />
-      <h1>Hi, I am Angela.</h1>
       <nav>
-        <ul>
-          <li><a href="#description">Who am I?</a></li>
-          <li><a href="#hobbies">What do I do in my free time?</a></li>
-          <li>...</li>
+        <ul class="nav--list">
+          <li class="nav--item">
+            <a href="#about">About Me</a>
+          </li>
+          <li class="nav--item">
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav--item">
+            <a href="#skills">Skills</a>
+          </li>
         </ul>
       </nav>
+      <img src="./profile_picture.jpg" class="profile_pic" />
+      <h1>Hi, I am Angela.</h1>
     </header>
 
     <main>
-      <section id="description">
-        <h2>Who am I?</h2>
-        I am 30 years old and worked as Neuroscientist for the past 2 years.
-        That was also the time, when I discovered my passion for programming.
-        Now, I am doing a training as a Web-Developer at NeueFische.
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am 30 years old and worked as Neuroscientist for the past 2 years.
+          That was also the time, when I discovered my passion for programming.
+          Now, I am doing a training as a Web-Developer at NeueFische.
+        </p>
       </section>
 
       <section id="hobbies">
-        <h2>What do I do in my free time?</h2>
-        You might guess it.. I like to work on the one or the other project to
-        ease my everyday digital life. But of course there is other stuff. I am
-        also a bit nerdy and constantly work on my own little manga collection.
-        And I also have one or two magic decks at home. Last but not least,
-        bouldering is my third not so secret passion.
+        <h2>My Hobbies</h2>
+        <p>
+          You might guess it.. I like to work on the one or the other project to
+          ease my everyday digital life. But of course there is other stuff. I
+          am also a bit nerdy and constantly work on my own little manga
+          collection. And I also have one or two magic decks at home. Last but
+          not least, bouldering is my third not so secret passion.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills & Experience</h2>
+        <div class="skills--wrapper">
+          <div>
+            <h3>Programming</h3>
+            <ul class="skills--list">
+              <li class="skills--item">Python</li>
+              <li class="skills--item">HTML / CSS</li>
+              <li class="skills--item">Javascript</li>
+              <li class="skills--item">R</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Other</h3>
+            <ul class="skills--list">
+              <li class="skills--item">Statistical analysis</li>
+              <li class="skills--item">Project Management</li>
+              <li class="skills--item">Working in a team</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
 
   <footer>
-    <p>
+    <p class="myFooter">
       Visit my <a href="https://github.com/AHen-C0de/AHen-C0de">GitHub</a>, if
       you like!
     </p>
   </footer>
 </html>
+
+<!-- 
+  - sticky nav bar
+    - positioning: 
+      - display: flex;
+      - horizontal -> juystify-content: space-between oder gap;
+      - vertical -> align-items: center;
+      - flex-wrap: wrap -> stauche elemente nicht, wenn kein platz
+  - round box corners
+-->
